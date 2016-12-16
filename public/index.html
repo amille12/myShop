@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="myShop">
+  <head>
+    <meta charset="utf-8">
+    <title>My Shop</title>
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./styles/base.css">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+  </head>
+  <body ng-controller="mainCtrl">
+    <div class="wrapper">
+      <div id="header">
+        <h1>Welcome to myShop</h1>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a ui-sref="home">Home</a></li>
+          <li><a ui-sref="story">Our Story</a></li>
+          <li><a ui-sref="products">Products</a></li>
+          <li><a ui-sref="admin">Admin</a></li>
+        </ul>
+      </div>
+      <div ui-view></div>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+  <!-- CDN Links -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+
+  <!-- Angular App -->
+  <script src="js/app.js"></script>
+
+
+  <!-- Controllers -->
+  <script src="js/controllers/mainCtrl.js"></script>
+  <script src="js/controllers/galleryCtrl.js"></script>
+  <script src="js/controllers/adminCtrl.js"></script>
+  <script src="js/controllers/storyCtrl.js"></script>
+
+  <!-- Services -->
+  <script src="js/services/dataService.js"></script>
+  <script src="js/services/productService.js"></script>
+  <script src="js/services/galleryService.js"></script>
+
+  <!-- Directives -->
+
+
+  </body>
+</html>

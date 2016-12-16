@@ -1,0 +1,28 @@
+
+<h2><center>Add Product</center></h2>
+<form id="addForm">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Product Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name" ng-model="product.name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Description</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Describe the product" ng-model="product.description">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Price</label>
+    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Price of Product" ng-model="product.price">
+  </div>
+  </div>
+  <button type="submit" class="btn btn-default" ng-click="sendProduct(product)">Submit</button>
+</form>
+
+<h2><center>Delete Product</center></h2>
+<div class="galleryWrapper">
+  <div id="gallery" ng-repeat="product in products">
+    <h3>Name:  {{ product.name }}</h3>
+    <h3>Description:  {{ product.description }}</h3>
+    <h3>Price:  {{ product.price }}</h3>
+    <button ng-click="deleteItem(product, $index)">DELETE</button>
+  </div>
+</div>
