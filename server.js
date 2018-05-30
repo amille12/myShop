@@ -8,7 +8,7 @@ var productController = require('./api/controllers/productController.js');
 console.log(productController);
 // Node Server
 var app = express();
-var port = 8080;
+var port = 8000;
 
 
 // Middleware
